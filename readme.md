@@ -3,7 +3,7 @@
 Removed in Codeception 3.0, restored as standalone module for Codeception 4.
 Use at your own risk.
 
-[![Build Status](https://travis-ci.org/Codeception/module-angularjs.svg?branch=master)](https://travis-ci.org/Codeception/module-angularjs)
+[![Build Status](https://semaphoreci.com/api/v1/codeception/module-angularjs/branches/master/badge.svg)](https://semaphoreci.com/codeception/module-angularjs)
 
 ## Installation
 
