@@ -1,8 +1,28 @@
 class_name: AngularGuy
 bootstrap: false
 modules:
-    enabled:
-        - AngularJS:
-            url: http://davertmik.github.io/angular-demo-app
-            browser: firefox
-        - \Helper\Angular
+  enabled:
+    - AngularJS:
+        url: http://davertmik.github.io/angular-demo-app
+        browser: chrome
+        window_size: 1200x768
+        restart: true # Use a new browser window for each test (to isolate test cases from each other)
+    - \Helper\Angular
+env:
+  firefox:
+    modules:
+      config:
+        WebDriver:
+          browser: firefox
+          port: 4444
+  headless:
+    modules:
+      config:
+        WebDriver:
+          browser: chrome
+          window_size: false
+          restart: false
+          capabilities:
+            "goog:chromeOptions":
+              args: ["--headless", "--disable-gpu", "--disable-extensions"]
+              binary: "/usr/bin/google-chrome"
