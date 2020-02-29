@@ -12,13 +12,12 @@ env:
   firefox:
     modules:
       config:
-        WebDriver:
+        AngularJS:
           browser: firefox
-          port: 4444
   headless:
     modules:
       config:
-        WebDriver:
+        AngularJS:
           browser: chrome
           window_size: false
           restart: false
