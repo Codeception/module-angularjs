@@ -478,9 +478,6 @@ Closes current browser tab and switches to previous active tab.
 $I->closeTab();
 ```
 
-Can't be used with PhantomJS
-
-
 ### debugWebDriverLogs
  
 Print out latest Selenium Logs in debug mode
@@ -1049,9 +1046,6 @@ $I->openNewTab();
 ```
 Tab is opened by using `window.open` javascript in a browser.
 Please note, that adblock can restrict creating such tabs.
-
-Can't be used with PhantomJS
-
 
 
 ### performOn
@@ -1770,8 +1764,6 @@ $I->switchToNextTab();
 $I->switchToNextTab(2);
 ```
 
-Can't be used with PhantomJS
-
  * `param int` $offset 1
 
 
@@ -1787,8 +1779,6 @@ $I->switchToPreviousTab();
 // switch to 2nd previous tab
 $I->switchToPreviousTab(2);
 ```
-
-Can't be used with PhantomJS
 
  * `param int` $offset 1
 
